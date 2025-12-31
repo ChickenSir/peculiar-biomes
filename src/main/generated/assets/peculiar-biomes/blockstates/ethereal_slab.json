@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "peculiar-biomes:block/ethereal_slab"
+    },
+    "type=double": {
+      "model": "peculiar-biomes:block/ethereal_planks"
+    },
+    "type=top": {
+      "model": "peculiar-biomes:block/ethereal_slab_top"
+    }
+  }
+}

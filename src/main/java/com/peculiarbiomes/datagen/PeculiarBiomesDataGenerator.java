@@ -1,4 +1,4 @@
-package com.example.peculiarbiomes.datagen;
+package com.peculiarbiomes.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -12,6 +12,7 @@ public class PeculiarBiomesDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(PBModelProvider::new);
 		pack.addProvider(PBLangProvider::new);
+		pack.addProvider(PBBlockTagProvider::new);
 	}
 
 	@Override

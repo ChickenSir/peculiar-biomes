@@ -1,4 +1,4 @@
-package com.example.peculiarbiomes.mixin.client;
+package com.peculiarbiomes.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

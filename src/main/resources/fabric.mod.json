@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.peculiarbiomes.PeculiarBiomes"
+			"com.peculiarbiomes.PeculiarBiomes"
 		],
 		"client": [
-			"com.example.peculiarbiomes.PeculiarBiomesClient"
+			"com.peculiarbiomes.PeculiarBiomesClient"
 		],
 		"fabric-datagen": [
-			"com.example.peculiarbiomes.datagen.PeculiarBiomesDataGenerator"
+			"com.peculiarbiomes.datagen.PeculiarBiomesDataGenerator"
 		]
 	},
 	"mixins": [

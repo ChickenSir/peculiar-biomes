@@ -1,4 +1,4 @@
-package com.example.peculiarbiomes.mixin;
+package com.peculiarbiomes.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

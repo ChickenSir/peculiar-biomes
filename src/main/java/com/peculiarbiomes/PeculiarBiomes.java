@@ -1,4 +1,4 @@
-package com.example.peculiarbiomes;
+package com.peculiarbiomes;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.peculiarbiomes.registries.BlockRegistry;
+import com.peculiarbiomes.registries.BlockRegistry;
 
 public class PeculiarBiomes implements ModInitializer {
 	public static final String modID = "peculiar-biomes";
@@ -27,6 +27,10 @@ public class PeculiarBiomes implements ModInitializer {
 			entries.add(BlockRegistry.ETHEREAL_LOG);
 			entries.add(BlockRegistry.ETHEREAL_WOOD);
 			entries.add(BlockRegistry.ETHEREAL_PLANKS);
+			entries.add(BlockRegistry.ETHEREAL_SLAB);
+			entries.add(BlockRegistry.ETHEREAL_STAIRS);
+			entries.add(BlockRegistry.ETHEREAL_FENCE);
+			entries.add(BlockRegistry.ETHEREAL_FENCE_GATE);
 		})
 		.build();
 

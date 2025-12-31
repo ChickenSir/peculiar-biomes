@@ -1,6 +1,6 @@
-package com.example.peculiarbiomes.datagen;
+package com.peculiarbiomes.datagen;
 
-import com.example.peculiarbiomes.registries.BlockRegistry;
+import com.peculiarbiomes.registries.BlockRegistry;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -20,7 +20,11 @@ public class PBModelProvider extends FabricModelProvider {
             .log(BlockRegistry.ETHEREAL_LOG)
             .wood(BlockRegistry.ETHEREAL_WOOD);
 
-        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.ETHEREAL_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool ethereal_planks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlockRegistry.ETHEREAL_PLANKS);
+        ethereal_planks_pool.slab(BlockRegistry.ETHEREAL_SLAB);
+        ethereal_planks_pool.stairs(BlockRegistry.ETHEREAL_STAIRS);
+        ethereal_planks_pool.fence(BlockRegistry.ETHEREAL_FENCE);
+        ethereal_planks_pool.fenceGate(BlockRegistry.ETHEREAL_FENCE_GATE);
     }
 
     @Override

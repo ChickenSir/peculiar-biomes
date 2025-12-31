@@ -1,5 +1,9 @@
 {
+  "block.peculiar-biomes.ethereal_fence": "Ethereal Fence",
+  "block.peculiar-biomes.ethereal_fence_gate": "Ethereal Fence Gate",
   "block.peculiar-biomes.ethereal_log": "Ethereal Log",
   "block.peculiar-biomes.ethereal_planks": "Ethereal Planks",
+  "block.peculiar-biomes.ethereal_slab": "Ethereal Slab",
+  "block.peculiar-biomes.ethereal_stairs": "Ethereal Stairs",
   "block.peculiar-biomes.ethereal_wood": "Ethereal Wood"
 }

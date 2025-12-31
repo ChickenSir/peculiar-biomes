@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "peculiar-biomes:block/ethereal_planks",
+    "side": "peculiar-biomes:block/ethereal_planks",
+    "top": "peculiar-biomes:block/ethereal_planks"
+  }
+}
