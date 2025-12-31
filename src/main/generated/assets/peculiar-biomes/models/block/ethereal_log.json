@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "peculiar-biomes:block/ethereal_log_top",
+    "side": "peculiar-biomes:block/ethereal_log"
+  }
+}

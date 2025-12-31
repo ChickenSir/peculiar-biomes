@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "peculiar-biomes:block/ethereal_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "peculiar-biomes:block/ethereal_wood"
+    },
+    "axis=z": {
+      "model": "peculiar-biomes:block/ethereal_wood",
+      "x": 90
+    }
+  }
+}

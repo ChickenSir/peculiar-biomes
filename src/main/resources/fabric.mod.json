@@ -22,7 +22,7 @@
 			"com.example.peculiarbiomes.PeculiarBiomesClient"
 		],
 		"fabric-datagen": [
-			"com.example.peculiarbiomes.PeculiarBiomesDataGenerator"
+			"com.example.peculiarbiomes.datagen.PeculiarBiomesDataGenerator"
 		]
 	},
 	"mixins": [

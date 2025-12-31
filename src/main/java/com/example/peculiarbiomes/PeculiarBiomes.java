@@ -1,24 +1,41 @@
 package com.example.peculiarbiomes;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class PeculiarBiomes implements ModInitializer {
-	public static final String MOD_ID = "peculiar-biomes";
+import com.example.peculiarbiomes.registries.BlockRegistry;
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+public class PeculiarBiomes implements ModInitializer {
+	public static final String modID = "peculiar-biomes";
+	public static final String modName = "Peculiar Biomes";
+	public static final Logger LOGGER = LoggerFactory.getLogger(modID);
+
+	// Item Group
+	private static final ItemGroup PECULIAR_BIOMES_GROUP = FabricItemGroup.builder()
+		.icon(() -> new ItemStack(BlockRegistry.ETHEREAL_LOG))
+		.displayName(Text.translatable(modName))
+		.entries((context, entries) -> {
+			entries.add(BlockRegistry.ETHEREAL_LOG);
+			entries.add(BlockRegistry.ETHEREAL_WOOD);
+			entries.add(BlockRegistry.ETHEREAL_PLANKS);
+		})
+		.build();
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		LOGGER.info("Registering Blocks!");
+		BlockRegistry.registerBlocks();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Registering Item Group!");
+		Registry.register(Registries.ITEM_GROUP, new Identifier(modID, "peculiar_biomes_group"), PECULIAR_BIOMES_GROUP);
 	}
 }
