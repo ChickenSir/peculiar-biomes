@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "peculiar-biomes",
+	"version": "${version}",
+	"name": "Peculiar Biomes",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/peculiar-biomes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.peculiarbiomes.PeculiarBiomes"
+		],
+		"client": [
+			"com.example.peculiarbiomes.PeculiarBiomesClient"
+		],
+		"fabric-datagen": [
+			"com.example.peculiarbiomes.PeculiarBiomesDataGenerator"
+		]
+	},
+	"mixins": [
+		"peculiar-biomes.mixins.json",
+		{
+			"config": "peculiar-biomes.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
