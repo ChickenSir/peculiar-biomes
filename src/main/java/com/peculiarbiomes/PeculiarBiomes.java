@@ -24,6 +24,7 @@ public class PeculiarBiomes implements ModInitializer {
 		.icon(() -> new ItemStack(BlockRegistry.ETHEREAL_LOG))
 		.displayName(Text.translatable(modName))
 		.entries((context, entries) -> {
+			// Ethereal Wood Set
 			entries.add(BlockRegistry.ETHEREAL_LOG);
 			entries.add(BlockRegistry.ETHEREAL_WOOD);
 			entries.add(BlockRegistry.ETHEREAL_PLANKS);
