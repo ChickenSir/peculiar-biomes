@@ -23,6 +23,12 @@ public class PBLangProvider extends FabricLanguageProvider {
         translationBuilder.add(BlockRegistry.ETHEREAL_FENCE_GATE, "Ethereal Fence Gate");
         translationBuilder.add(BlockRegistry.ETHEREAL_BUTTON, "Ethereal Button");
         translationBuilder.add(BlockRegistry.ETHEREAL_PRESSURE_PLATE, "Ethereal Pressure Plate");
+
+        // Cobalt Set
+        translationBuilder.add(BlockRegistry.COBALT_ORE, "Cobalt Ore");
+        translationBuilder.add(BlockRegistry.DEEPSLATE_COBALT_ORE, "Deepslate Cobalt Ore");
+        translationBuilder.add(BlockRegistry.COBALT_BLOCK, "Block of Cobalt");
+        translationBuilder.add(BlockRegistry.RAW_COBALT_BLOCK, "Block of Raw Cobalt");
     }
     
 }

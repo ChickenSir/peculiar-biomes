@@ -27,6 +27,12 @@ public class PBModelProvider extends FabricModelProvider {
         ethereal_planks_pool.fenceGate(BlockRegistry.ETHEREAL_FENCE_GATE);
         ethereal_planks_pool.button(BlockRegistry.ETHEREAL_BUTTON);
         ethereal_planks_pool.pressurePlate(BlockRegistry.ETHEREAL_PRESSURE_PLATE);
+
+        // Cobalt Set
+        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.COBALT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.DEEPSLATE_COBALT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.RAW_COBALT_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockRegistry.COBALT_BLOCK);
     }
 
     @Override

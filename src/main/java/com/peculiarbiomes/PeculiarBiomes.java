@@ -34,6 +34,12 @@ public class PeculiarBiomes implements ModInitializer {
 			entries.add(BlockRegistry.ETHEREAL_FENCE_GATE);
 			entries.add(BlockRegistry.ETHEREAL_BUTTON);
 			entries.add(BlockRegistry.ETHEREAL_PRESSURE_PLATE);
+
+			// Cobalt Set
+			entries.add(BlockRegistry.COBALT_ORE);
+			entries.add(BlockRegistry.DEEPSLATE_COBALT_ORE);
+			entries.add(BlockRegistry.RAW_COBALT_BLOCK);
+			entries.add(BlockRegistry.COBALT_BLOCK);
 		})
 		.build();
 

@@ -36,6 +36,12 @@ public class BlockRegistry {
 
     public static final Block ETHEREAL_BUTTON = register(new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_BUTTON).nonOpaque(), BlockSetType.CHERRY, 30, true), "ethereal_button", true);
     public static final Block ETHEREAL_PRESSURE_PLATE = register(new PressurePlateBlock(ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE).nonOpaque(), BlockSetType.CHERRY), "ethereal_pressure_plate", true);
+
+    // Cobalt Set
+    public static final Block COBALT_ORE = register(new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)), "cobalt_ore", true);
+    public static final Block DEEPSLATE_COBALT_ORE = register(new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)), "deepslate_cobalt_ore", true);
+    public static final Block RAW_COBALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)), "raw_cobalt_block", true);
+    public static final Block COBALT_BLOCK = register(new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "cobalt_block", true);
     
     public static Block register(Block block, String name, boolean registerItem) {
         // Register the blocks ID
