@@ -21,6 +21,8 @@ public class PBLangProvider extends FabricLanguageProvider {
         translationBuilder.add(BlockRegistry.ETHEREAL_STAIRS, "Ethereal Stairs");
         translationBuilder.add(BlockRegistry.ETHEREAL_FENCE, "Ethereal Fence");
         translationBuilder.add(BlockRegistry.ETHEREAL_FENCE_GATE, "Ethereal Fence Gate");
+        translationBuilder.add(BlockRegistry.ETHEREAL_BUTTON, "Ethereal Button");
+        translationBuilder.add(BlockRegistry.ETHEREAL_PRESSURE_PLATE, "Ethereal Pressure Plate");
     }
     
 }

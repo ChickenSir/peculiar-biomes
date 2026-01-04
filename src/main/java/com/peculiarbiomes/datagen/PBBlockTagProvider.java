@@ -28,6 +28,12 @@ public class PBBlockTagProvider extends BlockTagProvider {
         
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlockRegistry.ETHEREAL_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+            .add(BlockRegistry.ETHEREAL_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+            .add(BlockRegistry.ETHEREAL_PRESSURE_PLATE);
     }
     
 }

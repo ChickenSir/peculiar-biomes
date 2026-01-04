@@ -1,5 +1,7 @@
-// 1.20.1	2025-12-31T16:09:21.8290177	Peculiar Biomes/Tags for minecraft:block
+// 1.20.1	2026-01-04T14:24:39.3226902	Peculiar Biomes/Tags for minecraft:block
+4e88bcff2c170dd5a48e525eb741c7c1c016caa4 data\minecraft\tags\blocks\pressure_plates.json
 be009f51ca4bb80f09bb73467922506b1387f879 data\minecraft\tags\blocks\fence_gates.json
 9a1ce93a560ead76bce064c390b9161d9b66ab2d data\minecraft\tags\blocks\stairs.json
 6e694fe1dac6df435f379e1413c10ef3fd6fd621 data\minecraft\tags\blocks\fences.json
 9a1bc7b8090ae7ab52d96d1c658f642ea963e31f data\minecraft\tags\blocks\slabs.json
+ea7c4a2796ca1fa288be8bdccf6bee23a6e2d234 data\minecraft\tags\blocks\buttons.json

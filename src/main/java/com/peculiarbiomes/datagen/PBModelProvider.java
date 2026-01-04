@@ -25,6 +25,8 @@ public class PBModelProvider extends FabricModelProvider {
         ethereal_planks_pool.stairs(BlockRegistry.ETHEREAL_STAIRS);
         ethereal_planks_pool.fence(BlockRegistry.ETHEREAL_FENCE);
         ethereal_planks_pool.fenceGate(BlockRegistry.ETHEREAL_FENCE_GATE);
+        ethereal_planks_pool.button(BlockRegistry.ETHEREAL_BUTTON);
+        ethereal_planks_pool.pressurePlate(BlockRegistry.ETHEREAL_PRESSURE_PLATE);
     }
 
     @Override

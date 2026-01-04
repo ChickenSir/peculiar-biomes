@@ -23,5 +23,9 @@ public class PeculiarBiomesClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_FENCE, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_FENCE_GATE, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_FENCE_GATE, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_BUTTON, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_BUTTON, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_PRESSURE_PLATE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ETHEREAL_PRESSURE_PLATE, RenderLayer.getTranslucent());
 	}
 }

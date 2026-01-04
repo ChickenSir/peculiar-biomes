@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "peculiar-biomes:block/ethereal_planks"
+  }
+}

@@ -32,6 +32,8 @@ public class PeculiarBiomes implements ModInitializer {
 			entries.add(BlockRegistry.ETHEREAL_STAIRS);
 			entries.add(BlockRegistry.ETHEREAL_FENCE);
 			entries.add(BlockRegistry.ETHEREAL_FENCE_GATE);
+			entries.add(BlockRegistry.ETHEREAL_BUTTON);
+			entries.add(BlockRegistry.ETHEREAL_PRESSURE_PLATE);
 		})
 		.build();
 
