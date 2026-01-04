@@ -1,4 +1,7 @@
 {
+  "block.peculiar-biomes.cobalt_block": "Block of Cobalt",
+  "block.peculiar-biomes.cobalt_ore": "Cobalt Ore",
+  "block.peculiar-biomes.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.peculiar-biomes.ethereal_button": "Ethereal Button",
   "block.peculiar-biomes.ethereal_fence": "Ethereal Fence",
   "block.peculiar-biomes.ethereal_fence_gate": "Ethereal Fence Gate",
@@ -7,5 +10,6 @@
   "block.peculiar-biomes.ethereal_pressure_plate": "Ethereal Pressure Plate",
   "block.peculiar-biomes.ethereal_slab": "Ethereal Slab",
   "block.peculiar-biomes.ethereal_stairs": "Ethereal Stairs",
-  "block.peculiar-biomes.ethereal_wood": "Ethereal Wood"
+  "block.peculiar-biomes.ethereal_wood": "Ethereal Wood",
+  "block.peculiar-biomes.raw_cobalt_block": "Block of Raw Cobalt"
 }
