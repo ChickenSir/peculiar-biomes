@@ -1,7 +1,11 @@
 package com.peculiarbiomes.registries;
 
 import com.peculiarbiomes.PeculiarBiomes;
+import com.peculiarbiomes.block.TransparentFenceBlock;
+import com.peculiarbiomes.block.TransparentFenceGateBlock;
 import com.peculiarbiomes.block.TransparentPillarBlock;
+import com.peculiarbiomes.block.TransparentSlabBlock;
+import com.peculiarbiomes.block.TransparentStairsBlock;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -27,13 +31,13 @@ public class BlockRegistry {
 
     // Ethereal Wood Set
     public static final Block ETHEREAL_LOG = register(new TransparentPillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG).nonOpaque()), "ethereal_log", true);
-    public static final Block ETHEREAL_WOOD = register(new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WOOD).nonOpaque()), "ethereal_wood", true);
+    public static final Block ETHEREAL_WOOD = register(new TransparentPillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WOOD).nonOpaque()), "ethereal_wood", true);
     public static final Block ETHEREAL_PLANKS = register(new TransparentBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).nonOpaque()), "ethereal_planks", true);
 
-    public static final Block ETHEREAL_SLAB = register(new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).nonOpaque()), "ethereal_slab", true);
-    public static final Block ETHEREAL_STAIRS = register(new StairsBlock(ETHEREAL_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS).nonOpaque()), "ethereal_stairs", true);
-    public static final Block ETHEREAL_FENCE = register(new FenceBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE).nonOpaque()), "ethereal_fence", true);
-    public static final Block ETHEREAL_FENCE_GATE = register(new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).nonOpaque(), WoodType.CHERRY), "ethereal_fence_gate", true);
+    public static final Block ETHEREAL_SLAB = register(new TransparentSlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).nonOpaque()), "ethereal_slab", true);
+    public static final Block ETHEREAL_STAIRS = register(new TransparentStairsBlock(ETHEREAL_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS).nonOpaque()), "ethereal_stairs", true);
+    public static final Block ETHEREAL_FENCE = register(new TransparentFenceBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE).nonOpaque()), "ethereal_fence", true);
+    public static final Block ETHEREAL_FENCE_GATE = register(new TransparentFenceGateBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).nonOpaque(), WoodType.CHERRY), "ethereal_fence_gate", true);
 
     public static final Block ETHEREAL_BUTTON = register(new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_BUTTON).nonOpaque(), BlockSetType.CHERRY, 30, true), "ethereal_button", true);
     public static final Block ETHEREAL_PRESSURE_PLATE = register(new PressurePlateBlock(ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE).nonOpaque(), BlockSetType.CHERRY), "ethereal_pressure_plate", true);
