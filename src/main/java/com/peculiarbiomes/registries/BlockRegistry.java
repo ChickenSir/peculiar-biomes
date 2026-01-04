@@ -1,6 +1,7 @@
 package com.peculiarbiomes.registries;
 
 import com.peculiarbiomes.PeculiarBiomes;
+import com.peculiarbiomes.block.TransparentPillarBlock;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -14,6 +15,7 @@ import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
+import net.minecraft.block.TransparentBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -24,9 +26,9 @@ import net.minecraft.util.Identifier;
 public class BlockRegistry {
 
     // Ethereal Wood Set
-    public static final Block ETHEREAL_LOG = register(new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG).nonOpaque()), "ethereal_log", true);
+    public static final Block ETHEREAL_LOG = register(new TransparentPillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG).nonOpaque()), "ethereal_log", true);
     public static final Block ETHEREAL_WOOD = register(new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WOOD).nonOpaque()), "ethereal_wood", true);
-    public static final Block ETHEREAL_PLANKS = register(new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).nonOpaque()), "ethereal_planks", true);
+    public static final Block ETHEREAL_PLANKS = register(new TransparentBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).nonOpaque()), "ethereal_planks", true);
 
     public static final Block ETHEREAL_SLAB = register(new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).nonOpaque()), "ethereal_slab", true);
     public static final Block ETHEREAL_STAIRS = register(new StairsBlock(ETHEREAL_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS).nonOpaque()), "ethereal_stairs", true);
